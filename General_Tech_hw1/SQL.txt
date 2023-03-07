@@ -1,0 +1,21 @@
+1. SELECT * 
+   FROM Products
+   WHERE Price BETWEEN 10 AND 100
+   ORDER BY ProductName
+
+2.UPDATE Customers
+  SET Address=' '
+  WHERE NOT Country IN ('Germany', 'France')
+
+3.DELETE FROM Customers
+  WHERE Country='USA'
+
+4.SELECT * 
+  FROM Suppliers
+  WHERE Country='Japan' AND City='Tokyo'
+  ORDER BY SupplierName
+
+5. SELECT * 
+  FROM Products
+  WHERE Price <= 20 AND CategoryID IN (1, 5)
+  ORDER BY Price
