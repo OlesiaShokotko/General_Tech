@@ -1,0 +1,19 @@
+1. SELECT *
+FROM Products
+WHERE CategoryID IN (2, 5) AND Price BETWEEN 5 AND 25 AND ProductName LIKE '%syrup%'
+
+2.INSERT into Products(ProductName, SupplierID, CategoryID, Unit, Price) values("Barbie Doll", 2, 10, "10 boxes", 50)
+
+3.UPDATE Customers 
+SET Address = "Solmmstrasse 43"
+WHERE CustomerID = 1
+
+4.UPDATE Customers
+SET ContactName = "", Address = ""
+WHERE NOT Country IN ("Germany", "USA")
+
+5.UPDATE Suppliers
+SET Phone = ""
+
+6.DELETE FROM Suppliers
+WHERE NOT Country = "USA"
